@@ -4,6 +4,7 @@ let tablenum = document.getElementById('tableNum');
 let getfood = document.getElementById('getFood');
 let Error = document.getElementById('error');
 let order = document.getElementById('order');
+let count = 0;
 
 
 gettablenum.addEventListener('click' , function(){
@@ -23,13 +24,23 @@ getfood.addEventListener('click' , function(){
    if (Num.innerHTML == '' ){
       Error.innerHTML = 'You must fill your table no. first!';
    } else{
-    let Dish = document.createElement('p');
+    let Dish = document.getElementById('dish');
+    let Amount = document.getElementById('amount');
+    count++;
+    Amount.innerHTML = ' x ' + count;
+    Amount.classList.add('amount');
     Dish.classList.add('dish');
     Error.innerHTML = '';
     Dish.innerHTML = 'Buttermilk Chicken';
-    order.appendChild(Dish);
+    
    }
 });
+
+
+
+
+
+
 
 
 
