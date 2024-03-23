@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <title>Restaurant Ordering System</title>
 </head>
 <body>
@@ -14,22 +15,42 @@
     <div class="title">
         <h1>Welcome to XYZ Cuisine!</h1>
     </div>
-    <div class="table_number">
+   
+    <div class="table_number">                                                                      
         <input type="text" id="tableNum" placeholder="Enter Table Number">
         <button type="submit" id="getTableNum">Submit</button>
+        <p id="error"></p>
+
     </div>
+   
+    <div class="food">
+        <img src="https://cdn.kuali.com/wp-content/uploads/2021/09/19165325/Butter-Chicken-830x553.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 style="background-color: white;"><b style="background-color: white;">Buttermilk Chicken</b></h4>
+          <p style="background-color: white; font-size: 14px;">
+            Buttermilk chicken: Tenderized in tangy buttermilk, coated in seasoned flour, and fried to crispy perfection</p>
+          <button id="getFood">Add</button>
+        </div>
+   </div>
+
 
 
    
-    <div class="menu">
+   
+    <div class="log-out">
      <h2>Checkout</h2>
      <p class="table">Table Number:</p><p id="num"></p>
+     <div id="order" class="order">
+        <h4 id="dish"></h4><span id="amount" class="amount"></span>
+     </div>
     </div>
+   
 
     <div class="checkout">
     <button type="submit" onclick="checkOut()">Checkout</button>
     <button id="cancel" type="submit" onclick="cancelOrder()">Cancel</button>
     </div> 
+
 
     
     
