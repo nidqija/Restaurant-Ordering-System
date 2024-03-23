@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Ordering System</title>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Welcome to XYZ Cuisine!</h1>
+    </div>
+    <div class="table_number">
+        <input type="text" id="tableNum" placeholder="Enter Table Number">
+        <button type="submit" id="getTableNum">Submit</button>
+    </div>
+
+
+   
+    <div class="menu">
+     <h2>Checkout</h2>
+     <p class="table">Table Number:</p><p id="num"></p>
+    </div>
+
+    <div class="checkout">
+    <button type="submit" onclick="checkOut()">Checkout</button>
+    <button id="cancel" type="submit" onclick="cancelOrder()">Cancel</button>
+    </div> 
+
+    
+    
+
+
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
