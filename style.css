@@ -33,7 +33,7 @@
     margin: auto;
     background-color: white;
     border: none;
-    margin-bottom: 40px;
+    
 }
 
 .table_number button{
@@ -50,22 +50,30 @@
 }
 
 
-.menu{
+#error{
+    color: red;
+}
+
+.log-out{
    
-    height: 550px;
-    margin-top: 20px;
+    height: 700px;
+    margin-top: 10px;
     background-color: white;
     width: 400px;
     display: flex;
     text-align: right;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    position: relative;
+    bottom: 200px;
+    left: 900px;
 }
 
-.menu h2{
+.log-out h2{
     background-color: white;
     margin-left: 10px;
     font-size: 30px;
+    position: relative;
     
 }
 
@@ -77,6 +85,10 @@
     font-size: 15px;
     color: white;
     cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    left: 900px;/* ------------------------------ left: 900px; ------------------------------ */
+    bottom: 200px;
 }
 
 .checkout #cancel{
@@ -103,3 +115,62 @@
     position: relative;
     right: 100px;
 }
+
+
+.food{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 2rem;
+    top: 7rem;
+    border-radius: 20px;
+}
+
+.dish{
+    position: relative;
+    top: 150px;
+    background-color: white;
+    right: 265px;
+}
+
+.order{
+    background-color: white;
+}
+
+.food {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    background-color: white;
+    
+  }
+
+.food button{
+    background-color: #31A831;
+    padding: 9px 11px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    justify-content: end;
+}
+
+.amount{
+    position: relative;
+    top: 100px;
+    background-color: white;
+    right: 180px;
+    font-size: 20px;
+}
+
+
+
+
