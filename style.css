@@ -201,6 +201,35 @@
 }
 
 
+.total{
+    background-color: white;
+    position: absolute;
+    top: 38rem;
+    right: 20rem;
+    font-size: 20px;
+}
+
+
+#totalPrice{
+    background-color: white;
+    position: absolute;
+    top: 37rem;
+    right: 10rem;
+    font-size: 30px;
+}
+
+.RM{
+    position: absolute;
+    top: 625px;
+    background-color: white;
+    right: 15rem;
+    font-size: 25px;
+}
+
+
+
+
+
 
 
 
