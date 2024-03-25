@@ -5,10 +5,13 @@ let getfood = document.getElementById('getFood');
 let getfood2 = document.getElementById('getFood2');
 let Error = document.getElementById('error');
 let order = document.getElementById('order');
+let totalprice = document.getElementById('totalPrice');
+let rm = document.getElementById('RM');
 let count = 0;
 let count2 = 0;
 let increment = 0;
 let increment2 = 0;
+
 
 
 gettablenum.addEventListener('click' , function(){
@@ -41,6 +44,8 @@ getfood.addEventListener('click' , function(){
     Error.innerHTML = '';
     Dish.innerHTML = 'Buttermilk Chicken';
     Price.innerHTML = 'RM' + increment;
+    rm.innerHTML = 'RM ';
+    totalprice.innerHTML = increment + increment2;
    }
 });
 
@@ -54,7 +59,7 @@ getfood2.addEventListener('click' , function(){
     let Price2 = document.getElementById('price2');
     
     count2++;
-    increment2+= 12;
+    increment2+= 12.40;
     Amount2.innerHTML = ' x ' + count2;
     Amount2.classList.add('amount');
     Dish2.classList.add('dish');
@@ -62,8 +67,17 @@ getfood2.addEventListener('click' , function(){
     Error.innerHTML = '';
     Dish2.innerHTML = 'Chicken Lasagna';
     Price2.innerHTML = 'RM' + increment2;
+    rm.innerHTML = 'RM ';
+    totalprice.innerHTML =  increment + increment2;
    }
 });
+
+
+
+
+
+
+
 
 
 
