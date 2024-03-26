@@ -3,14 +3,17 @@ let Num = document.getElementById('num');
 let tablenum = document.getElementById('tableNum');
 let getfood = document.getElementById('getFood');
 let getfood2 = document.getElementById('getFood2');
+let getfood3 = document.getElementById('getFood3');
 let Error = document.getElementById('error');
 let order = document.getElementById('order');
 let totalprice = document.getElementById('totalPrice');
 let rm = document.getElementById('RM');
 let count = 0;
 let count2 = 0;
+let count3 = 0;
 let increment = 0;
 let increment2 = 0;
+let increment3 = 0;
 
 
 
@@ -45,7 +48,7 @@ getfood.addEventListener('click' , function(){
     Dish.innerHTML = 'Buttermilk Chicken';
     Price.innerHTML = 'RM' + increment;
     rm.innerHTML = 'RM ';
-    totalprice.innerHTML = increment + increment2;
+    totalprice.innerHTML = increment + increment2 + increment3;
    }
 });
 
@@ -68,9 +71,44 @@ getfood2.addEventListener('click' , function(){
     Dish2.innerHTML = 'Chicken Lasagna';
     Price2.innerHTML = 'RM' + increment2;
     rm.innerHTML = 'RM ';
-    totalprice.innerHTML =  increment + increment2;
+    totalprice.innerHTML =  increment + increment2 + increment3;
    }
 });
+
+
+
+
+getfood3.addEventListener('click' , function(){
+   if (Num.innerHTML == '' ){
+      Error.innerHTML = 'You must fill your table no. first!';
+   } else{
+    let Dish3 = document.getElementById('dish3');
+    let Amount3 = document.getElementById('amount3');
+    let Price3 = document.getElementById('price3');
+    
+    count3++;
+    increment3+= 9.50;
+    Amount3.innerHTML = ' x ' + count3;
+    Amount3.classList.add('amount');
+    Dish3.classList.add('dish');
+    Price3.classList.add('price');
+    Error.innerHTML = '';
+    Dish3.innerHTML = 'Dippy Dippy Churros';
+    Price3.innerHTML = 'RM' + increment3;
+    rm.innerHTML = 'RM ';
+    totalprice.innerHTML =  increment + increment2 + increment3;
+   }
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
