@@ -55,7 +55,7 @@
 
 .log-out{
    
-    height: 700px;
+    height: 900px;
     margin-top: 10px;
     background-color: white;
     width: 400px;
@@ -64,7 +64,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: relative;
-    bottom: 500px;
+    bottom: 800px;
     left: 900px;
 }
 
@@ -87,7 +87,7 @@
     margin-bottom: 20px;
     position: relative;
     left: 900px;/* ------------------------------ left: 900px; ------------------------------ */
-    bottom: 500px;
+    bottom: 800px;
 }
 
 .checkout #cancel{
@@ -204,7 +204,7 @@
 .total{
     background-color: white;
     position: absolute;
-    top: 38rem;
+    top: 48rem;
     right: 20rem;
     font-size: 20px;
 }
@@ -213,18 +213,43 @@
 #totalPrice{
     background-color: white;
     position: absolute;
-    top: 37rem;
+    top: 47rem;
     right: 10rem;
     font-size: 30px;
 }
 
 .RM{
     position: absolute;
-    top: 625px;
+    top: 785px;
     background-color: white;
     right: 15rem;
     font-size: 25px;
 }
+
+
+
+
+.food3{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 2rem;
+    bottom: 50px;
+    border-radius: 20px;
+}
+
+
+.food3 button{
+    background-color: #31A831;
+    padding: 9px 11px;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    justify-content: end;
+}
+
+
 
 
 
